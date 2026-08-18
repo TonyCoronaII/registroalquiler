@@ -204,25 +204,83 @@
           <h2>Generar Acta de Entrega</h2>
           <p class="text-center mb-3" style="color:var(--color-text-light);">Rellena los datos del inmueble y generaremos el acta personalizada.</p>
           <form id="form-acta" onsubmit="return false;">
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;font-size:.9rem;">Datos del acta</p>
             <div class="form-group">
               <label for="tipo-acta">Tipo de acta</label>
               <select id="tipo-acta">
                 <option value="Entrega">Entrega de llaves (inicio del alquiler)</option>
-                <option value="Devolución">Devolución de llaves (fin del alquiler)</option>
+                <option value="Devolucion">Devolución de llaves (fin del alquiler)</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="direccion-acta">Dirección del inmueble</label>
+              <label for="direccion-acta">Direccion del inmueble</label>
               <input type="text" id="direccion-acta" placeholder="Calle, número, piso, CP, ciudad" required>
             </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Datos de las partes</p>
             <div class="form-group">
               <label for="nombre-arrendador-acta">Nombre del arrendador</label>
               <input type="text" id="nombre-arrendador-acta" placeholder="Nombre y apellidos" required>
             </div>
             <div class="form-group">
+              <label for="dni-arrendador-acta">DNI/NIE del arrendador</label>
+              <input type="text" id="dni-arrendador-acta" placeholder="12345678A" required>
+            </div>
+            <div class="form-group">
               <label for="nombre-arrendatario-acta">Nombre del arrendatario</label>
               <input type="text" id="nombre-arrendatario-acta" placeholder="Nombre y apellidos" required>
             </div>
+            <div class="form-group">
+              <label for="dni-arrendatario-acta">DNI/NIE del arrendatario</label>
+              <input type="text" id="dni-arrendatario-acta" placeholder="87654321B" required>
+            </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Llaves entregadas</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;">
+              <div class="form-group">
+                <label for="llave-portal">Llave portal</label>
+                <input type="number" id="llave-portal" placeholder="0" min="0" value="0">
+              </div>
+              <div class="form-group">
+                <label for="llave-puerta">Llave puerta principal</label>
+                <input type="number" id="llave-puerta" placeholder="0" min="0" value="2">
+              </div>
+              <div class="form-group">
+                <label for="llave-buzon">Llave buzon</label>
+                <input type="number" id="llave-buzon" placeholder="0" min="0" value="0">
+              </div>
+              <div class="form-group">
+                <label for="llave-garaje">Llave garaje/trastero</label>
+                <input type="number" id="llave-garaje" placeholder="0" min="0" value="0">
+              </div>
+              <div class="form-group">
+                <label for="mando-garaje">Mando garaje</label>
+                <input type="number" id="mando-garaje" placeholder="0" min="0" value="0">
+              </div>
+            </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Lectura de contadores</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;">
+              <div class="form-group">
+                <label for="contador-electricidad">Electricidad</label>
+                <input type="text" id="contador-electricidad" placeholder="Lectura">
+              </div>
+              <div class="form-group">
+                <label for="contador-agua">Agua</label>
+                <input type="text" id="contador-agua" placeholder="Lectura">
+              </div>
+              <div class="form-group">
+                <label for="contador-gas">Gas</label>
+                <input type="text" id="contador-gas" placeholder="Lectura">
+              </div>
+            </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Estado y observaciones</p>
+            <div class="form-group">
+              <label for="inventario-acta">Inventario de mobiliario (opcional)</label>
+              <textarea id="inventario-acta" placeholder="Ej: Nevera, lavadora, mesa comedor, 2 mesitas de noche..." rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="observaciones-acta">Observaciones generales (opcional)</label>
+              <textarea id="observaciones-acta" placeholder="Ej: Mancha en pared del salon, grifo del baño gotea..." rows="3"></textarea>
+            </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Contacto</p>
             <div class="form-group">
               <label for="email-acta">Tu email</label>
               <input type="email" id="email-acta" placeholder="tu@email.com" required>
