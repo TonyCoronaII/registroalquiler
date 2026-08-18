@@ -36,7 +36,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: 'TrámitesAlquiler <onboarding@resend.dev>',
-        to: 'contacto@tramitesalquiler.com',
+        to: process.env.CONTACT_EMAIL || 'contacto@tramitesalquiler.com',
         subject: `Nueva solicitud: ${servicio} (${precio})`,
         html: html
       })
