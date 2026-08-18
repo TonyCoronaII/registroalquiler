@@ -192,10 +192,24 @@
           <h2>Enviar Burofax por Impago</h2>
           <p class="text-center mb-3" style="color:var(--color-text-light);">Rellena los datos del caso y prepararemos el requerimiento de pago.</p>
           <form id="form-burofax" onsubmit="return false;">
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;font-size:.9rem;">Datos del arrendador</p>
             <div class="form-group">
               <label for="nombre-reclamante">Tu nombre completo (arrendador)</label>
               <input type="text" id="nombre-reclamante" placeholder="Nombre y apellidos" required>
             </div>
+            <div class="form-group">
+              <label for="dni-reclamante">Tu DNI/NIE</label>
+              <input type="text" id="dni-reclamante" placeholder="12345678A" required>
+            </div>
+            <div class="form-group">
+              <label for="domicilio-reclamante">Tu domicilio</label>
+              <input type="text" id="domicilio-reclamante" placeholder="Tu dirección fiscal completa" required>
+            </div>
+            <div class="form-group">
+              <label for="iban-reclamante">IBAN para recibir el pago</label>
+              <input type="text" id="iban-reclamante" placeholder="ES00 0000 0000 0000 0000 0000" required>
+            </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Datos del inquilino moroso</p>
             <div class="form-group">
               <label for="nombre-inquilino">Nombre del inquilino (arrendatario)</label>
               <input type="text" id="nombre-inquilino" placeholder="Nombre y apellidos del inquilino" required>
@@ -203,6 +217,11 @@
             <div class="form-group">
               <label for="direccion-envio">Dirección de envío del burofax</label>
               <input type="text" id="direccion-envio" placeholder="Dirección completa del inquilino" required>
+            </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Datos del impago</p>
+            <div class="form-group">
+              <label for="fecha-contrato">Fecha del contrato de alquiler</label>
+              <input type="date" id="fecha-contrato" required>
             </div>
             <div class="form-group">
               <label for="meses-impago">Meses de impago</label>
@@ -219,6 +238,7 @@
               <label for="renta-burofax">Renta mensual (€)</label>
               <input type="number" id="renta-burofax" placeholder="800" required>
             </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Contacto</p>
             <div class="form-group">
               <label for="email-burofax">Tu email</label>
               <input type="email" id="email-burofax" placeholder="tu@email.com" required>

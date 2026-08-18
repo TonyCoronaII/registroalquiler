@@ -207,8 +207,8 @@
             <div class="form-group">
               <label for="tipo-acta">Tipo de acta</label>
               <select id="tipo-acta">
-                <option value="entrega">Entrega de llaves (inicio del alquiler)</option>
-                <option value="devolucion">Devolución de llaves (fin del alquiler)</option>
+                <option value="Entrega">Entrega de llaves (inicio del alquiler)</option>
+                <option value="Devolución">Devolución de llaves (fin del alquiler)</option>
               </select>
             </div>
             <div class="form-group">
@@ -226,6 +226,18 @@
             <div class="form-group">
               <label for="email-acta">Tu email</label>
               <input type="email" id="email-acta" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="fotos-acta">Fotos del inmueble (opcional, máx. 10)</label>
+              <div class="file-upload-area" id="upload-area">
+                <input type="file" id="fotos-acta" multiple accept="image/*" style="display:none">
+                <div class="file-upload-placeholder" onclick="document.getElementById('fotos-acta').click()">
+                  <span style="font-size:2rem;">📷</span>
+                  <p style="margin:.5rem 0 0;font-size:.9rem;">Pulsa para seleccionar fotos</p>
+                  <p style="margin:0;font-size:.8rem;color:var(--color-text-light);">JPG, PNG — se comprimen automáticamente</p>
+                </div>
+                <div class="file-upload-preview" id="preview-fotos" style="display:none"></div>
+              </div>
             </div>
             <button type="submit" class="btn btn-primary btn-block btn-lg" style="background:#CA8A04;">Generar acta — 9€</button>
             <p class="text-center mt-2" style="font-size:.8rem;color:var(--color-text-light);">O contacta directamente:</p>

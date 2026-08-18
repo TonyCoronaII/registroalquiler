@@ -182,6 +182,7 @@
           <h2>Generar Contrato de Alquiler</h2>
           <p class="text-center mb-3" style="color:var(--color-text-light);">Rellena los datos principales y generaremos tu contrato personalizado.</p>
           <form id="form-contrato" onsubmit="return false;">
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;font-size:.9rem;">Datos del arrendador</p>
             <div class="form-group">
               <label for="nombre-arrendador">Nombre del arrendador (propietario)</label>
               <input type="text" id="nombre-arrendador" placeholder="Nombre y apellidos" required>
@@ -191,9 +192,32 @@
               <input type="text" id="dni-arrendador" placeholder="12345678A" required>
             </div>
             <div class="form-group">
+              <label for="domicilio-arrendador">Domicilio del arrendador</label>
+              <input type="text" id="domicilio-arrendador" placeholder="Dirección fiscal del propietario" required>
+            </div>
+            <div class="form-group">
+              <label for="iban-arrendador">IBAN para recibir la renta</label>
+              <input type="text" id="iban-arrendador" placeholder="ES00 0000 0000 0000 0000 0000" required>
+            </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Datos del arrendatario</p>
+            <div class="form-group">
+              <label for="nombre-arrendatario">Nombre del arrendatario (inquilino)</label>
+              <input type="text" id="nombre-arrendatario" placeholder="Nombre y apellidos del inquilino" required>
+            </div>
+            <div class="form-group">
+              <label for="dni-arrendatario">DNI/NIE del arrendatario</label>
+              <input type="text" id="dni-arrendatario" placeholder="12345678B" required>
+            </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Datos del inmueble</p>
+            <div class="form-group">
               <label for="direccion-inmueble">Dirección completa del inmueble</label>
               <input type="text" id="direccion-inmueble" placeholder="Calle, número, piso, CP, ciudad" required>
             </div>
+            <div class="form-group">
+              <label for="ref-catastral">Referencia catastral (opcional)</label>
+              <input type="text" id="ref-catastral" placeholder="Se encuentra en el recibo del IBI">
+            </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Condiciones del contrato</p>
             <div class="form-group">
               <label for="renta-contrato">Renta mensual (€)</label>
               <input type="number" id="renta-contrato" placeholder="800" required>
@@ -201,21 +225,33 @@
             <div class="form-group">
               <label for="duracion-contrato">Duración del contrato</label>
               <select id="duracion-contrato">
-                <option value="5">5 años (persona física)</option>
-                <option value="7">7 años (persona jurídica)</option>
-                <option value="1">1 año (renovable)</option>
+                <option value="5 años">5 años (persona física)</option>
+                <option value="7 años">7 años (persona jurídica)</option>
+                <option value="1 año">1 año (renovable)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pago-gastos">¿Quién paga gastos de comunidad, IBI y basuras?</label>
+              <select id="pago-gastos">
+                <option value="ARRENDADOR/A">El arrendador (propietario)</option>
+                <option value="ARRENDATARIO/A">El arrendatario (inquilino)</option>
               </select>
             </div>
             <div class="form-group">
               <label for="zona-tensionada">¿El inmueble está en zona tensionada?</label>
               <select id="zona-tensionada">
-                <option value="no">No / No lo sé</option>
-                <option value="si">Sí, está declarada zona tensionada</option>
+                <option value="No">No / No lo sé</option>
+                <option value="Sí">Sí, está declarada zona tensionada</option>
               </select>
             </div>
+            <p class="form-section-title" style="font-weight:600;color:var(--color-primary);margin-bottom:.5rem;margin-top:1.5rem;font-size:.9rem;">Contacto</p>
             <div class="form-group">
               <label for="email-contrato">Tu email</label>
               <input type="email" id="email-contrato" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono-contrato">Tu teléfono (opcional)</label>
+              <input type="tel" id="telefono-contrato" placeholder="600 000 000">
             </div>
             <button type="submit" class="btn btn-success btn-block btn-lg">Generar contrato — 19€</button>
             <p class="text-center mt-2" style="font-size:.8rem;color:var(--color-text-light);">O contacta directamente:</p>
