@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   }
 
   const WEBHOOK_SECRET = process.env.STRIPE_WEBHOOK_SECRET;
-  const APPS_SCRIPT_URL = process.env.APPS_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbxb5Q1wFrE6PDVs577VpPZQRhnh2T7eoDZNDaCFpez3sUUd1qdQiWh5je3BNzCdLuPL/exec';
+  const APPS_SCRIPT_URL = process.env.APPS_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbzByHoY0YMa25cA3hOq66I5YNOAO2fw8BAv6GjwWb_pWZYJxX_scOCJaF5WnlZDvyQO/exec';
 
   const chunks = [];
   for await (const chunk of req) {
