@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="data-depth" content="">
+  <title>RegistroAlquiler.com — Herramientas para propietarios que alquilan con seguridad</title>
+  <meta name="description" content="Herramientas para propietarios: fianzas por CCAA, calculadora de renta IRAV/IPC, modelo 600 ITP, scoring de inquilinos, contratos LAU, burofax por impago, seguro de impago y acta de entrega. Rápido, legal y asequible.">
+  <link rel="canonical" href="https://registroalquiler.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RegistroAlquiler.com",
+    "url": "https://registroalquiler.com",
+    "description": "Herramientas para propietarios: depósito de fianzas, scoring de inquilinos, contratos LAU y burofax por impago.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://registroalquiler.com/fianzas/?ccaa={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RegistroAlquiler.com",
+    "url": "https://registroalquiler.com",
+    "logo": "https://registroalquiler.com/img/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": "Spanish"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">🏠 Registro<span>Alquiler</span></a>
+      <button class="nav-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="/fianzas/">Fianzas</a></li>
+          <li><a href="/calculadora-renta/">Calculadora Renta</a></li>
+          <li><a href="/modelo-600/">Modelo 600</a></li>
+          <li><a href="/validar-inquilino/">Scoring</a></li>
+          <li><a href="/contratos/">Contratos</a></li>
+          <li><a href="/reclamaciones/">Burofax</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Todo lo que necesitas para <em>alquilar con seguridad</em></h1>
+        <p>Deposita la fianza, calcula la renta actualizada, verifica a tu inquilino, genera un contrato blindado, asegura tu renta y reclama impagos. Todo desde un solo sitio.</p>
+        <a href="#buscador" class="btn btn-accent btn-lg">Buscar mi comunidad autónoma</a>
+      </div>
+    </section>
+
+    <section class="buscador-section" id="buscador">
+      <div class="buscador-box">
+        <h2>¿Dónde tienes tu vivienda en alquiler?</h2>
+        <div class="select-wrapper">
+          <select id="ccaa-selector" aria-label="Selecciona tu comunidad autónoma">
+            <option value="">— Selecciona tu comunidad autónoma —</option>
+          </select>
+        </div>
+        <div id="ficha-resultado"></div>
+      </div>
+    </section>
+
+    <section class="servicios-section" id="servicios">
+      <div class="container">
+        <h2>Herramientas profesionales para propietarios</h2>
+        <p class="subtitulo">Protege tu inversión inmobiliaria con soluciones legales, rápidas y asequibles</p>
+        <div class="servicios-grid">
+
+          <div class="servicio-card">
+            <div class="card-icon" style="background: #2563EB;">🔍</div>
+            <span class="badge badge-free">Gratis</span>
+            <h3>Fianzas por Comunidad Autónoma</h3>
+            <p class="card-desc">Consulta el organismo, los plazos, la documentación y el trámite online para depositar la fianza de tu alquiler en cualquiera de las 17 CCAA.</p>
+            <ul class="card-features">
+              <li>Información oficial verificada</li>
+              <li>Checklist de documentación</li>
+              <li>Enlace directo a la sede electrónica</li>
+              <li>Plazos legales y normativa</li>
+            </ul>
+            <a href="/fianzas/" class="btn btn-outline btn-block">Consultar fianzas</a>
+          </div>
+
+          <div class="servicio-card">
+            <div class="card-icon" style="background: #7C3AED;">📊</div>
+            <span class="badge badge-free">Gratis</span>
+            <h3>Calculadora de Renta IRAV/IPC</h3>
+            <p class="card-desc">Calcula al instante cuánto puedes subir la renta de tu alquiler según el índice vigente: IRAV, IPC limitado o IPC general.</p>
+            <ul class="card-features">
+              <li>Índice IRAV 2024 actualizado</li>
+              <li>Histórico de límites legales</li>
+              <li>Resultado inmediato</li>
+              <li>Base legal incluida</li>
+            </ul>
+            <a href="/calculadora-renta/" class="btn btn-outline btn-block">Calcular renta</a>
+          </div>
+
+          <div class="servicio-card">
+            <div class="card-icon" style="background: #0891B2;">🏛️</div>
+            <span class="badge badge-free">Gratis</span>
+            <h3>Modelo 600 — ITP Alquiler</h3>
+            <p class="card-desc">Calcula el Impuesto de Transmisiones Patrimoniales de tu alquiler según la CCAA. Conoce si estás exento y cuánto debes pagar.</p>
+            <ul class="card-features">
+              <li>Cálculo por comunidad autónoma</li>
+              <li>Exenciones automáticas</li>
+              <li>Base imponible detallada</li>
+              <li>Tipos impositivos actualizados</li>
+            </ul>
+            <a href="/modelo-600/" class="btn btn-outline btn-block">Calcular ITP</a>
+          </div>
+
+          <div class="servicio-card">
+            <div class="card-icon" style="background: #CA8A04;">🔑</div>
+            <h3>Acta de Entrega de Llaves</h3>
+            <p class="card-desc">Documenta el estado del inmueble al entregar o devolver las llaves con inventario detallado y firma de ambas partes.</p>
+            <div class="card-price">9€ <small>por acta</small></div>
+            <ul class="card-features">
+              <li>Inventario por estancias</li>
+              <li>Lectura de contadores</li>
+              <li>Firma de ambas partes</li>
+              <li>PDF profesional</li>
+            </ul>
+            <a href="/acta-entrega/" class="btn btn-primary btn-block" style="background:#CA8A04;">Generar acta — 9€</a>
+          </div>
+
+          <div class="servicio-card">
+            <div class="card-icon" style="background: #2563EB;">🛡️</div>
+            <h3>Scoring de Inquilino</h3>
+            <p class="card-desc">Verifica la solvencia económica de tu candidato antes de firmar. Análisis de nóminas, ratio de endeudamiento y consulta de ficheros de morosidad.</p>
+            <div class="card-price">15€ <small>por informe</small></div>
+            <ul class="card-features">
+              <li>Análisis de nóminas y contratos</li>
+              <li>Consulta ASNEF/RAI</li>
+              <li>Informe PDF en 24h</li>
+              <li>Cumplimiento RGPD</li>
+            </ul>
+            <a href="/validar-inquilino/" class="btn btn-primary btn-block">Validar inquilino — 15€</a>
+          </div>
+
+          <div class="servicio-card">
+            <div class="card-icon" style="background: #059669;">📄</div>
+            <h3>Contrato de Alquiler LAU</h3>
+            <p class="card-desc">Genera un contrato adaptado a la Ley de Vivienda 2023, con cláusulas de protección, inventario y actualización de renta según INE.</p>
+            <div class="card-price">19€ <small>por contrato</small></div>
+            <ul class="card-features">
+              <li>Adaptado a Ley 12/2023</li>
+              <li>Cláusulas de protección</li>
+              <li>Índice IRAV incluido</li>
+              <li>PDF listo para firmar</li>
+            </ul>
+            <a href="/contratos/" class="btn btn-success btn-block">Generar contrato — 19€</a>
+          </div>
+
+          <div class="servicio-card">
+            <div class="card-icon" style="background: #DC2626;">📨</div>
+            <h3>Burofax por Impago</h3>
+            <p class="card-desc">Envía un requerimiento de pago con validez legal. Redacción profesional, envío certificado y acuse de recibo. Paso previo al desahucio.</p>
+            <div class="card-price">39€ <small>por envío</small></div>
+            <ul class="card-features">
+              <li>Redacción profesional</li>
+              <li>Acuse de recibo certificado</li>
+              <li>Válido para desahucio (art. 22.4 LEC)</li>
+              <li>Seguimiento de entrega</li>
+            </ul>
+            <a href="/reclamaciones/" class="btn btn-danger btn-block">Enviar burofax — 39€</a>
+          </div>
+
+          <div class="servicio-card">
+            <div class="card-icon" style="background: #16A34A;">🏦</div>
+            <h3>Seguro de Impago</h3>
+            <p class="card-desc">Compara seguros de impago de alquiler y protege tu renta desde el primer mes. Cobertura de rentas, defensa jurídica y actos vandálicos.</p>
+            <div class="card-price">Desde 3% <small>renta anual</small></div>
+            <ul class="card-features">
+              <li>Cobertura de hasta 18 meses</li>
+              <li>Defensa jurídica incluida</li>
+              <li>Actos vandálicos cubiertos</li>
+              <li>Deducible en IRPF</li>
+            </ul>
+            <a href="/seguro-impago/" class="btn btn-success btn-block">Comparar seguros</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">¿Es obligatorio depositar la fianza del alquiler?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Sí. Según la LAU (Ley 29/1994), el arrendador está obligado a depositar la fianza en el organismo competente de su comunidad autónoma. El incumplimiento puede acarrear sanciones económicas.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Cuánto es la fianza legal de un alquiler de vivienda?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">La fianza legal obligatoria es de 1 mensualidad de renta para viviendas y 2 mensualidades para usos distintos de vivienda (locales, oficinas, etc.). Adicionalmente, el propietario puede pedir garantías adicionales de hasta 2 mensualidades.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Puedo verificar la solvencia de un inquilino legalmente?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Sí, siempre que cuentes con el consentimiento expreso del candidato y cumplas la normativa de protección de datos (RGPD y LOPDGDD). El candidato debe autorizar la consulta y el tratamiento de sus datos financieros.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿El contrato generado está adaptado a la nueva Ley de Vivienda?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Sí, nuestros contratos incluyen todas las cláusulas obligatorias de la Ley 12/2023, incluyendo zona tensionada si aplica, y están adaptados a la LAU vigente (Ley 29/1994).</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿El burofax es obligatorio antes de un desahucio?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">El artículo 22.4 de la Ley de Enjuiciamiento Civil (LEC) exige que se haya requerido el pago al inquilino por un medio fehaciente antes de que el juzgado admita la demanda. El burofax certificado con acuse de recibo cumple este requisito.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿RegistroAlquiler.com es un servicio oficial?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">No, RegistroAlquiler.com es una plataforma privada de herramientas para propietarios. Facilitamos el acceso a la información oficial de cada comunidad autónoma y ofrecemos servicios complementarios de verificación, documentación y reclamación.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h2>¿Listo para alquilar con total seguridad?</h2>
+        <p>Empieza verificando la fianza de tu comunidad o contrata uno de nuestros servicios profesionales.</p>
+        <a href="#buscador" class="btn btn-accent btn-lg">Buscar mi CCAA</a>
+        <a href="/validar-inquilino/" class="btn btn-outline btn-lg" style="border-color:#fff;color:#fff;">Validar inquilino</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>RegistroAlquiler.com</h4>
+        <p>Herramientas para propietarios que alquilan con seguridad. Información oficial, servicios legales y protección ante impagos.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Herramientas gratuitas</h4>
+        <a href="/fianzas/">Fianzas por CCAA</a>
+        <a href="/calculadora-renta/">Calculadora de renta</a>
+        <a href="/modelo-600/">Modelo 600 ITP</a>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <a href="/validar-inquilino/">Scoring Inquilino — 15€</a>
+        <a href="/contratos/">Contratos LAU — 19€</a>
+        <a href="/acta-entrega/">Acta de entrega — 9€</a>
+        <a href="/reclamaciones/">Burofax impago — 39€</a>
+        <a href="/seguro-impago/">Seguro de impago</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="legal/aviso-legal.html">Aviso legal</a>
+        <a href="legal/privacidad.html">Política de privacidad</a>
+        <a href="legal/cookies.html">Política de cookies</a>
+        <a href="legal/condiciones.html">Condiciones de uso</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 RegistroAlquiler.com — Todos los derechos reservados. No somos un organismo oficial.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/buscador-fianzas.js"></script>
+  <script src="js/conversion.js"></script>
+</body>
+</html>

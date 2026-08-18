@@ -1,0 +1,365 @@
+{
+  "comunidades": [
+    {
+      "id": "andalucia",
+      "nombre": "Andalucía",
+      "organismo": "Agencia de Vivienda y Rehabilitación de Andalucía (AVRA)",
+      "sedeElectronica": "https://www.juntadeandalucia.es/organismos/avra.html",
+      "tramiteOnline": "https://www.juntadeandalucia.es/servicios/procedimientos/detalle/78.html",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la entrega de llaves",
+      "checklist": [
+        "Copia del contrato de arrendamiento firmado",
+        "DNI/NIE del arrendador y arrendatario",
+        "Referencia catastral del inmueble",
+        "Justificante del importe de la fianza",
+        "Modelo 806 de autoliquidación de fianza cumplimentado"
+      ],
+      "normativa": "Decreto 35/2004 de 10 de febrero",
+      "observaciones": "El depósito se realiza en la Consejería de Fomento. Posibilidad de tramitación telemática a través del portal de la Junta."
+    },
+    {
+      "id": "aragon",
+      "nombre": "Aragón",
+      "organismo": "Dirección General de Vivienda del Gobierno de Aragón",
+      "sedeElectronica": "https://www.aragon.es/-/fianzas-de-arrendamientos-urbanos",
+      "tramiteOnline": "https://www.aragon.es/tramitador/-/tramite/fianzas-arrendamientos",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la entrega de llaves",
+      "checklist": [
+        "Contrato de arrendamiento original o copia compulsada",
+        "DNI/NIE de las partes",
+        "Impreso de depósito de fianza cumplimentado",
+        "Justificante de ingreso bancario de la fianza",
+        "Referencia catastral del inmueble"
+      ],
+      "normativa": "Decreto 298/2001 del Gobierno de Aragón",
+      "observaciones": "Se deposita ante la Dirección General de Vivienda. Se puede tramitar presencialmente o por registro telemático."
+    },
+    {
+      "id": "asturias",
+      "nombre": "Asturias",
+      "organismo": "Consejería de Ordenación del Territorio, Urbanismo y Vivienda",
+      "sedeElectronica": "https://sede.asturias.es/",
+      "tramiteOnline": "https://sede.asturias.es/fianzas-de-arrendamientos-urbanos",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la extinción del contrato",
+      "checklist": [
+        "Contrato de arrendamiento firmado por ambas partes",
+        "Fotocopia del DNI/NIE del arrendador",
+        "Impreso oficial de depósito de fianza",
+        "Justificante del importe depositado",
+        "Referencia catastral"
+      ],
+      "normativa": "Decreto 71/1992 del Principado de Asturias",
+      "observaciones": "Depósito ante la Consejería competente en materia de vivienda. Tramitación presencial o electrónica."
+    },
+    {
+      "id": "baleares",
+      "nombre": "Islas Baleares",
+      "organismo": "Instituto Balear de la Vivienda (IBAVI)",
+      "sedeElectronica": "https://www.caib.es/govern/organigrama/area.do?coduo=2390137",
+      "tramiteOnline": "https://www.caib.es/seucaib/ca/200/persones/tramites/tramite/4648036",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la entrega de llaves",
+      "checklist": [
+        "Contrato de arrendamiento",
+        "DNI/NIE del depositante",
+        "Modelo de depósito de fianza del IBAVI",
+        "Justificante del importe de la fianza",
+        "Referencia catastral del inmueble"
+      ],
+      "normativa": "Decreto 40/2014 de 26 de septiembre",
+      "observaciones": "IBAVI gestiona el registro de fianzas. Existe la modalidad telemática a través de la sede del CAIB."
+    },
+    {
+      "id": "canarias",
+      "nombre": "Canarias",
+      "organismo": "Instituto Canario de la Vivienda (ICAVI)",
+      "sedeElectronica": "https://www.gobiernodecanarias.org/vivienda/",
+      "tramiteOnline": "https://sede.gobiernodecanarias.org/sede/tramites/5573",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la extinción del contrato",
+      "checklist": [
+        "Contrato de arrendamiento completo",
+        "DNI/NIE del arrendador",
+        "Impreso de depósito del ICAVI",
+        "Justificante de la fianza",
+        "Referencia catastral del inmueble"
+      ],
+      "normativa": "Decreto 76/2005 de 10 de mayo",
+      "observaciones": "Se deposita en el ICAVI. Tramitación posible por sede electrónica del Gobierno de Canarias."
+    },
+    {
+      "id": "cantabria",
+      "nombre": "Cantabria",
+      "organismo": "Dirección General de Vivienda del Gobierno de Cantabria",
+      "sedeElectronica": "https://www.cantabria.es/web/vivienda",
+      "tramiteOnline": "https://sede.cantabria.es/fianzas",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la finalización del contrato",
+      "checklist": [
+        "Contrato de arrendamiento",
+        "DNI/NIE del arrendador",
+        "Impreso oficial de constitución de fianza",
+        "Justificante del importe depositado",
+        "Referencia catastral"
+      ],
+      "normativa": "Decreto 68/2000 de Cantabria",
+      "observaciones": "Depósito ante la Dirección General de Vivienda. Se admite tramitación electrónica."
+    },
+    {
+      "id": "castilla-la-mancha",
+      "nombre": "Castilla-La Mancha",
+      "organismo": "Consejería de Fomento — Dirección General de Vivienda y Urbanismo",
+      "sedeElectronica": "https://www.castillalamancha.es/gobierno/fomento",
+      "tramiteOnline": "https://www.jccm.es/tramitesygestiones/deposito-de-fianzas-de-arrendamientos-urbanos",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la devolución de llaves",
+      "checklist": [
+        "Contrato de arrendamiento firmado",
+        "DNI/NIE del depositante",
+        "Modelo de depósito de fianza",
+        "Justificante de ingreso",
+        "Referencia catastral del inmueble"
+      ],
+      "normativa": "Decreto 191/2005 de 27 de diciembre",
+      "observaciones": "Gestión a través de la Consejería de Fomento. Posibilidad de tramitación en las delegaciones provinciales."
+    },
+    {
+      "id": "castilla-y-leon",
+      "nombre": "Castilla y León",
+      "organismo": "Consejería de Medio Ambiente, Vivienda y Ordenación del Territorio",
+      "sedeElectronica": "https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100/1251181050732/_/_/_",
+      "tramiteOnline": "https://www.tramitacastillayleon.jcyl.es/web/jcyl/AdministracionElectronica/es/Plantilla100/1284933612498/_/_/_",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la entrega de llaves",
+      "checklist": [
+        "Contrato de arrendamiento",
+        "DNI/NIE del arrendador",
+        "Modelo de depósito de fianza",
+        "Justificante del ingreso de la fianza",
+        "Referencia catastral"
+      ],
+      "normativa": "Decreto 123/1997 de 19 de junio",
+      "observaciones": "Depósito en los Servicios Territoriales de Vivienda de cada provincia o vía telemática."
+    },
+    {
+      "id": "catalunya",
+      "nombre": "Cataluña",
+      "organismo": "Institut Català del Sòl (Incasòl)",
+      "sedeElectronica": "https://incasol.gencat.cat/es/inici/",
+      "tramiteOnline": "https://incasol.gencat.cat/ca/serveis/fiances/",
+      "plazoDeposito": 60,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "14 días hábiles desde la solicitud",
+      "checklist": [
+        "Contrato de arrendamiento completo",
+        "DNI/NIE o NIF de arrendador y arrendatario",
+        "Impreso oficial de depósito de Incasòl o tramitación online",
+        "Justificante del importe de la fianza",
+        "Referencia catastral del inmueble",
+        "Cédula de habitabilidad vigente (si es vivienda)"
+      ],
+      "normativa": "Llei 13/1996 del registre i el dipòsit de fiances",
+      "observaciones": "Incasòl permite la tramitación 100% telemática. Es obligatorio depositar la fianza antes de 60 días. Se puede consultar el estado del depósito online."
+    },
+    {
+      "id": "extremadura",
+      "nombre": "Extremadura",
+      "organismo": "Consejería de Movilidad, Transporte y Vivienda",
+      "sedeElectronica": "https://www.juntaex.es/con04/",
+      "tramiteOnline": "https://sede.juntaex.es/fianzas-alquiler",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la extinción del contrato",
+      "checklist": [
+        "Contrato de arrendamiento",
+        "DNI/NIE del arrendador",
+        "Impreso de depósito de fianza",
+        "Justificante del ingreso bancario",
+        "Referencia catastral"
+      ],
+      "normativa": "Decreto 160/2005 de 28 de junio",
+      "observaciones": "Depósito ante la Consejería competente. Tramitación presencial en las oficinas de vivienda o electrónica."
+    },
+    {
+      "id": "galicia",
+      "nombre": "Galicia",
+      "organismo": "Instituto Gallego de la Vivienda y Suelo (IGVS)",
+      "sedeElectronica": "https://igvs.xunta.gal/",
+      "tramiteOnline": "https://sede.xunta.gal/detalle-procedemento?codtram=VI440A",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la entrega de llaves",
+      "checklist": [
+        "Contrato de arrendamiento",
+        "DNI/NIE del depositante",
+        "Modelo de depósito del IGVS",
+        "Justificante del pago de la fianza",
+        "Referencia catastral del inmueble"
+      ],
+      "normativa": "Decreto 42/2011 de 3 de marzo",
+      "observaciones": "El IGVS gestiona los depósitos. Se puede tramitar por sede electrónica de la Xunta."
+    },
+    {
+      "id": "madrid",
+      "nombre": "Comunidad de Madrid",
+      "organismo": "Agencia de Vivienda Social de la Comunidad de Madrid (antes IVIMA)",
+      "sedeElectronica": "https://www.comunidad.madrid/servicios/vivienda/fianzas-arrendamientos-urbanos",
+      "tramiteOnline": "https://gestiona.comunidad.madrid/sfar/",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la solicitud de devolución",
+      "checklist": [
+        "Contrato de arrendamiento firmado por ambas partes",
+        "DNI/NIE del arrendador (persona física) o CIF (persona jurídica)",
+        "DNI/NIE del arrendatario",
+        "Referencia catastral del inmueble",
+        "Importe exacto de la fianza (una mensualidad)",
+        "Datos bancarios del arrendador para devolución futura"
+      ],
+      "normativa": "Decreto 181/1996 de 5 de diciembre y Ley 29/1994 LAU",
+      "observaciones": "La Comunidad de Madrid permite la tramitación 100% telemática a través del portal SFAR. El arrendador puede depositar y solicitar la devolución online con certificado digital o Cl@ve."
+    },
+    {
+      "id": "murcia",
+      "nombre": "Región de Murcia",
+      "organismo": "Consejería de Fomento e Infraestructuras — Dirección General de Vivienda",
+      "sedeElectronica": "https://www.carm.es/web/pagina?IDCONTENIDO=60&IDTIPO=140",
+      "tramiteOnline": "https://sede.carm.es/web/pagina?IDCONTENIDO=2654",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la extinción del contrato",
+      "checklist": [
+        "Contrato de arrendamiento",
+        "DNI/NIE del arrendador",
+        "Impreso de depósito de fianza",
+        "Justificante del ingreso de fianza",
+        "Referencia catastral"
+      ],
+      "normativa": "Decreto 23/2007 de 23 de febrero",
+      "observaciones": "Depósito ante la Dirección General de Vivienda. Se puede tramitar presencialmente o por sede electrónica."
+    },
+    {
+      "id": "navarra",
+      "nombre": "Navarra",
+      "organismo": "Nasuvinsa — Sociedad Pública de Vivienda de Navarra",
+      "sedeElectronica": "https://nasuvinsa.es/",
+      "tramiteOnline": "https://www.navarra.es/home_es/Servicios/ficha/9027/Deposito-de-fianzas",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "15 días hábiles desde la solicitud",
+      "checklist": [
+        "Contrato de arrendamiento",
+        "DNI/NIE del arrendador",
+        "Modelo de depósito de fianza de Nasuvinsa",
+        "Justificante del importe",
+        "Referencia catastral"
+      ],
+      "normativa": "Ley Foral 10/2010 del derecho a la vivienda",
+      "observaciones": "Nasuvinsa gestiona las fianzas. Existe portal online para la tramitación."
+    },
+    {
+      "id": "pais-vasco",
+      "nombre": "País Vasco",
+      "organismo": "BIZILAGUN — Servicio Vasco de Vivienda del Gobierno Vasco",
+      "sedeElectronica": "https://www.etxebide.euskadi.eus/",
+      "tramiteOnline": "https://www.euskadi.eus/fianzas-arrendamientos/web01-tramite/es/",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la solicitud",
+      "checklist": [
+        "Contrato de arrendamiento",
+        "DNI/NIE del arrendador y arrendatario",
+        "Formulario de depósito de Bizilagun",
+        "Justificante del ingreso",
+        "Referencia catastral del inmueble",
+        "Certificado energético (si aplica)"
+      ],
+      "normativa": "Decreto 241/2012 del Gobierno Vasco",
+      "observaciones": "Bizilagun permite la gestión telemática completa de fianzas a través de Etxebide."
+    },
+    {
+      "id": "la-rioja",
+      "nombre": "La Rioja",
+      "organismo": "Dirección General de Vivienda del Gobierno de La Rioja",
+      "sedeElectronica": "https://www.larioja.org/vivienda/es",
+      "tramiteOnline": "https://www.larioja.org/vivienda/es/fianzas",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la extinción del contrato",
+      "checklist": [
+        "Contrato de arrendamiento",
+        "DNI/NIE del arrendador",
+        "Modelo de depósito de fianza",
+        "Justificante del importe de la fianza",
+        "Referencia catastral"
+      ],
+      "normativa": "Decreto 9/1998 de 20 de febrero",
+      "observaciones": "Depósito ante la Dirección General de Vivienda. Tramitación presencial o electrónica."
+    },
+    {
+      "id": "valencia",
+      "nombre": "Comunitat Valenciana",
+      "organismo": "Conselleria de Vivienda y Arquitectura Bioclimática — GVA",
+      "sedeElectronica": "https://habitatge.gva.es/es/",
+      "tramiteOnline": "https://www.gva.es/es/inicio/procedimientos?id_proc=19533",
+      "plazoDeposito": 30,
+      "unidadPlazo": "días desde la firma del contrato",
+      "modeloITP": "Modelo 600",
+      "importeFianza": "1 mensualidad de renta (vivienda) / 2 mensualidades (uso distinto)",
+      "devolucion": "1 mes desde la solicitud de devolución",
+      "checklist": [
+        "Contrato de arrendamiento firmado",
+        "DNI/NIE del arrendador y arrendatario",
+        "Modelo normalizado de depósito de fianza",
+        "Justificante del ingreso de la fianza",
+        "Referencia catastral del inmueble",
+        "Certificado energético del inmueble"
+      ],
+      "normativa": "Decreto 75/2007 de 18 de mayo del Consell",
+      "observaciones": "Tramitación 100% telemática a través de la sede electrónica de la GVA. El propietario puede consultar el estado de sus depósitos online."
+    }
+  ]
+}

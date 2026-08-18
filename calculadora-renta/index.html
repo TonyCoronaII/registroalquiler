@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="data-depth" content="../">
+  <title>Calculadora de Actualización de Renta 2024 — IRAV / IPC | RegistroAlquiler.com</title>
+  <meta name="description" content="Calcula gratis la renta actualizada de tu alquiler según el índice IRAV o IPC vigente. Introduce tu renta actual y fecha de contrato y obtén el resultado al instante.">
+  <link rel="canonical" href="https://registroalquiler.com/calculadora-renta/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculadora de Actualización de Renta",
+    "description": "Herramienta gratuita para calcular la renta actualizada de un alquiler según el índice IRAV o IPC.",
+    "url": "https://registroalquiler.com/calculadora-renta/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://registroalquiler.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Calculadora de Renta", "item": "https://registroalquiler.com/calculadora-renta/" }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué índice se usa para actualizar la renta del alquiler en 2024?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Desde 2024, se aplica el Índice de Referencia de Arrendamiento de Vivienda (IRAV), publicado mensualmente por el INE. Sustituye al IPC para las actualizaciones de renta de vivienda." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuándo puedo actualizar la renta de mi alquiler?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Solo en la fecha de aniversario del contrato, nunca antes. Debe notificarse al inquilino con al menos 1 mes de antelación, indicando el índice aplicado y la nueva renta." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Se puede subir la renta más que el IRAV?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. La Ley de Vivienda 12/2023 establece que la actualización anual de la renta solo puede hacerse conforme al IRAV. No se permiten subidas superiores a este índice." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo">🏠 Registro<span>Alquiler</span></a>
+      <button class="nav-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../fianzas/">Fianzas</a></li>
+          <li><a href="../calculadora-renta/" class="active">Calculadora Renta</a></li>
+          <li><a href="../modelo-600/">Modelo 600</a></li>
+          <li><a href="../validar-inquilino/">Scoring</a></li>
+          <li><a href="../contratos/">Contratos</a></li>
+          <li><a href="../reclamaciones/">Burofax</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumb container">
+      <a href="../">Inicio</a> <span>›</span> Calculadora de Actualización de Renta
+    </div>
+
+    <section class="landing-hero">
+      <div class="container">
+        <span class="badge badge-free">Herramienta gratuita</span>
+        <h1>Calculadora de actualización de renta <em>IRAV / IPC 2024</em></h1>
+        <p class="lead">Introduce la renta actual y la fecha de tu contrato para calcular al instante cuánto puedes actualizar legalmente según el índice vigente.</p>
+      </div>
+    </section>
+
+    <section class="buscador-section">
+      <div class="buscador-box" style="max-width:650px;">
+        <h2>Calcula tu renta actualizada</h2>
+        <form id="form-calculadora" onsubmit="return false;">
+          <div class="form-group">
+            <label for="renta-actual">Renta mensual actual (€)</label>
+            <input type="number" id="renta-actual" placeholder="800" step="0.01" min="0" required>
+          </div>
+          <div class="form-group">
+            <label for="fecha-contrato">Fecha de firma del contrato</label>
+            <input type="date" id="fecha-contrato" required>
+          </div>
+          <div class="form-group">
+            <label for="indice-aplicable">Índice a aplicar</label>
+            <select id="indice-aplicable">
+              <option value="irav">IRAV — Índice de Referencia (contratos desde 2024)</option>
+              <option value="ipc-3">IPC limitado al 3% (contratos 2023)</option>
+              <option value="ipc-2">IPC limitado al 2% (contratos 2022-2023)</option>
+              <option value="ipc">IPC general (contratos anteriores a 2022)</option>
+            </select>
+          </div>
+          <button type="button" id="btn-calcular" class="btn btn-primary btn-block btn-lg" style="background:#7C3AED;">Calcular renta actualizada</button>
+        </form>
+
+        <div id="resultado-calculo" style="display:none;" class="mt-3">
+          <div style="background:var(--color-bg);border:2px solid #7C3AED;border-radius:var(--radius-lg);padding:2rem;text-align:center;">
+            <p style="font-size:.9rem;color:var(--color-text-light);margin-bottom:.5rem;">Tu renta actualizada legalmente es:</p>
+            <p id="nueva-renta" style="font-size:2.5rem;font-weight:800;color:var(--color-primary);margin-bottom:.5rem;"></p>
+            <p id="detalle-calculo" style="font-size:.85rem;color:var(--color-text-light);margin-bottom:1rem;"></p>
+            <div id="info-legal" class="info-box" style="text-align:left;margin-top:1rem;"></div>
+          </div>
+        </div>
+
+        <div class="cross-sell mt-4">
+          <h4>Renta calculada. ¿Necesitas actualizar el contrato?</h4>
+          <p>Genera un contrato adaptado a la Ley de Vivienda 2023 con la cláusula de actualización correcta.</p>
+          <div class="cross-sell-links">
+            <a href="../contratos/" class="btn btn-success">Generar contrato LAU — 19€</a>
+            <a href="../validar-inquilino/" class="btn btn-primary">Scoring inquilino — 15€</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="local-content">
+      <div class="container" style="max-width:800px;">
+        <h2>¿Cómo funciona la actualización de renta?</h2>
+        <p>La <strong>Ley de Arrendamientos Urbanos (LAU)</strong> permite al propietario actualizar la renta una vez al año, en la fecha de aniversario del contrato. Desde la entrada en vigor de la <strong>Ley de Vivienda 12/2023</strong>, el índice de referencia ha cambiado:</p>
+
+        <h3>Índice IRAV (desde enero 2025)</h3>
+        <p>El <strong>Índice de Referencia de Arrendamiento de Vivienda (IRAV)</strong> es el nuevo índice oficial publicado por el INE para actualizar rentas de alquiler de vivienda. Sustituye definitivamente al IPC y está diseñado para ser más estable y evitar subidas bruscas.</p>
+
+        <h3>Límites temporales que se han aplicado</h3>
+        <div class="info-box">
+          <strong>Histórico de límites legales</strong>
+          <ul style="margin-top:.5rem;list-style:disc;padding-left:1.5rem;">
+            <li><strong>2022:</strong> Límite del 2% (medida antiinflación del Gobierno)</li>
+            <li><strong>2023:</strong> Límite del 2% (primer semestre) y 3% (segundo semestre)</li>
+            <li><strong>2024:</strong> Límite del 3% según disposición transitoria</li>
+            <li><strong>2025 en adelante:</strong> Se aplica el IRAV publicado por el INE</li>
+          </ul>
+        </div>
+
+        <h3>¿Cómo notificar la subida al inquilino?</h3>
+        <p>El propietario debe comunicar la actualización de renta al inquilino con al menos <strong>1 mes de antelación</strong> a la fecha de aniversario. La notificación debe incluir:</p>
+        <div class="checklist">
+          <ul>
+            <li>El índice de referencia utilizado (IRAV o IPC)</li>
+            <li>El porcentaje de variación aplicado</li>
+            <li>La renta anterior y la nueva renta resultante</li>
+            <li>La fecha a partir de la cual se aplica la nueva renta</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">¿Qué índice se usa para actualizar la renta en 2024?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Desde 2024, se aplica el Índice de Referencia de Arrendamiento de Vivienda (IRAV), publicado mensualmente por el INE. Sustituye al IPC para las actualizaciones de renta de vivienda.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Cuándo puedo actualizar la renta?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Solo en la fecha de aniversario del contrato, nunca antes. Debe notificarse al inquilino con al menos 1 mes de antelación, indicando el índice aplicado y la nueva renta.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Se puede subir la renta más que el IRAV?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">No. La Ley de Vivienda 12/2023 establece que la actualización anual de la renta solo puede hacerse conforme al IRAV. No se permiten subidas superiores a este índice.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Qué pasa si no actualizo la renta este año?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Si no notificas la actualización, la renta se mantiene igual. No se acumulan subidas de años anteriores: solo puedes aplicar la variación del índice en cada aniversario del contrato.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Protege tu alquiler de principio a fin</h2>
+        <p>Verifica al inquilino, genera un contrato blindado y asegura tu renta ante impagos.</p>
+        <a href="../seguro-impago/" class="btn btn-accent btn-lg">Comparar seguros de impago</a>
+        <a href="../contratos/" class="btn btn-outline btn-lg" style="border-color:#fff;color:#fff;">Contrato LAU — 19€</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>RegistroAlquiler.com</h4>
+        <p>Herramientas para propietarios que alquilan con seguridad.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Herramientas gratuitas</h4>
+        <a href="../fianzas/">Fianzas por CCAA</a>
+        <a href="../calculadora-renta/">Calculadora de renta</a>
+        <a href="../modelo-600/">Modelo 600 ITP</a>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <a href="../validar-inquilino/">Scoring Inquilino — 15€</a>
+        <a href="../contratos/">Contratos LAU — 19€</a>
+        <a href="../acta-entrega/">Acta de entrega — 9€</a>
+        <a href="../reclamaciones/">Burofax impago — 39€</a>
+        <a href="../seguro-impago/">Seguro de impago</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="../legal/aviso-legal.html">Aviso legal</a>
+        <a href="../legal/privacidad.html">Política de privacidad</a>
+        <a href="../legal/cookies.html">Política de cookies</a>
+        <a href="../legal/condiciones.html">Condiciones de uso</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 RegistroAlquiler.com — Todos los derechos reservados. No somos un organismo oficial.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+  document.getElementById('btn-calcular').addEventListener('click', function() {
+    const renta = parseFloat(document.getElementById('renta-actual').value);
+    const indice = document.getElementById('indice-aplicable').value;
+    if (!renta || renta <= 0) return;
+
+    const tasas = { 'irav': 2.2, 'ipc-3': 3.0, 'ipc-2': 2.0, 'ipc': 3.4 };
+    const nombres = { 'irav': 'IRAV (Índice de Referencia de Arrendamiento de Vivienda)', 'ipc-3': 'IPC limitado al 3%', 'ipc-2': 'IPC limitado al 2%', 'ipc': 'IPC general' };
+    const tasa = tasas[indice];
+    const nuevaRenta = renta * (1 + tasa / 100);
+    const diferencia = nuevaRenta - renta;
+
+    document.getElementById('nueva-renta').textContent = nuevaRenta.toFixed(2) + ' €/mes';
+    document.getElementById('detalle-calculo').textContent =
+      `Renta anterior: ${renta.toFixed(2)}€ → Subida: +${diferencia.toFixed(2)}€/mes (+${tasa}%)`;
+    document.getElementById('info-legal').innerHTML =
+      `<strong>Índice aplicado: ${nombres[indice]}</strong>` +
+      `<p style="margin-top:.5rem;font-size:.85rem;">La variación aplicada es del ${tasa}%. ` +
+      `Esta actualización solo es válida en la fecha de aniversario del contrato y debe notificarse al inquilino con 1 mes de antelación.</p>`;
+    document.getElementById('resultado-calculo').style.display = 'block';
+    document.getElementById('resultado-calculo').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+  </script>
+</body>
+</html>

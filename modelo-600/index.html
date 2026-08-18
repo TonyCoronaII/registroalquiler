@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="data-depth" content="../">
+  <title>Modelo 600 ITP Alquiler por Comunidad Autónoma — Guía Completa 2024</title>
+  <meta name="description" content="Guía para presentar el Modelo 600 del Impuesto de Transmisiones Patrimoniales (ITP) de tu contrato de alquiler. Tipos impositivos, plazos y trámite online por CCAA.">
+  <link rel="canonical" href="https://registroalquiler.com/modelo-600/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Modelo 600 ITP de Alquiler por Comunidad Autónoma",
+    "description": "Guía completa para presentar y liquidar el Modelo 600 del ITP de un contrato de arrendamiento en cada CCAA de España.",
+    "url": "https://registroalquiler.com/modelo-600/",
+    "author": { "@type": "Organization", "name": "RegistroAlquiler.com" },
+    "publisher": { "@type": "Organization", "name": "RegistroAlquiler.com" },
+    "datePublished": "2024-01-15",
+    "dateModified": "2024-06-01",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://registroalquiler.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Modelo 600 ITP", "item": "https://registroalquiler.com/modelo-600/" }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Es obligatorio pagar el ITP de un contrato de alquiler?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí, el arrendamiento está sujeto al ITP. El obligado al pago es el inquilino. Muchas CCAA aplican exenciones o bonificaciones para vivienda habitual." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es el plazo para presentar el Modelo 600?",
+        "acceptedAnswer": { "@type": "Answer", "text": "El plazo general es de 30 días hábiles desde la firma del contrato de arrendamiento." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Quién paga el ITP del alquiler?",
+        "acceptedAnswer": { "@type": "Answer", "text": "El sujeto pasivo (obligado al pago) es el arrendatario (inquilino), no el propietario. Aunque muchos inquilinos desconocen esta obligación." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../" class="logo">🏠 Registro<span>Alquiler</span></a>
+      <button class="nav-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../fianzas/">Fianzas</a></li>
+          <li><a href="../calculadora-renta/">Calculadora Renta</a></li>
+          <li><a href="../modelo-600/" class="active">Modelo 600</a></li>
+          <li><a href="../validar-inquilino/">Scoring</a></li>
+          <li><a href="../contratos/">Contratos</a></li>
+          <li><a href="../reclamaciones/">Burofax</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumb container">
+      <a href="../">Inicio</a> <span>›</span> Modelo 600 ITP por Comunidad Autónoma
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <span class="badge badge-free">Herramienta gratuita</span>
+        <h1>Modelo 600 — ITP del alquiler <em>por comunidad autónoma</em></h1>
+        <p>Consulta cómo liquidar el Impuesto de Transmisiones Patrimoniales de tu contrato de arrendamiento. Tipos impositivos, exenciones y trámite online en cada CCAA.</p>
+      </div>
+    </section>
+
+    <section class="buscador-section">
+      <div class="buscador-box" style="max-width:700px;">
+        <h2>Calculadora orientativa del ITP del alquiler</h2>
+        <form id="form-itp" onsubmit="return false;">
+          <div class="form-group">
+            <label for="renta-itp">Renta mensual del alquiler (€)</label>
+            <input type="number" id="renta-itp" placeholder="800" min="0" required>
+          </div>
+          <div class="form-group">
+            <label for="duracion-itp">Duración del contrato (años)</label>
+            <select id="duracion-itp">
+              <option value="1">1 año</option>
+              <option value="3">3 años</option>
+              <option value="5" selected>5 años</option>
+              <option value="7">7 años</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ccaa-itp">Comunidad autónoma</label>
+            <select id="ccaa-itp">
+              <option value="">— Selecciona CCAA —</option>
+              <option value="andalucia" data-tipo="0.3" data-exencion="vivienda">Andalucía</option>
+              <option value="aragon" data-tipo="0.5" data-exencion="no">Aragón</option>
+              <option value="asturias" data-tipo="0.5" data-exencion="no">Asturias</option>
+              <option value="baleares" data-tipo="0.5" data-exencion="no">Islas Baleares</option>
+              <option value="canarias" data-tipo="0.5" data-exencion="no">Canarias</option>
+              <option value="cantabria" data-tipo="0.5" data-exencion="no">Cantabria</option>
+              <option value="castilla-la-mancha" data-tipo="0.5" data-exencion="no">Castilla-La Mancha</option>
+              <option value="castilla-y-leon" data-tipo="0.5" data-exencion="no">Castilla y León</option>
+              <option value="catalunya" data-tipo="0.5" data-exencion="no">Cataluña</option>
+              <option value="extremadura" data-tipo="0.5" data-exencion="no">Extremadura</option>
+              <option value="galicia" data-tipo="0.5" data-exencion="no">Galicia</option>
+              <option value="la-rioja" data-tipo="0.5" data-exencion="no">La Rioja</option>
+              <option value="madrid" data-tipo="0" data-exencion="total">Comunidad de Madrid</option>
+              <option value="murcia" data-tipo="0.5" data-exencion="no">Región de Murcia</option>
+              <option value="navarra" data-tipo="0.5" data-exencion="no">Navarra</option>
+              <option value="pais-vasco" data-tipo="0.5" data-exencion="no">País Vasco</option>
+              <option value="valencia" data-tipo="0.5" data-exencion="no">Comunitat Valenciana</option>
+            </select>
+          </div>
+          <button type="button" id="btn-calcular-itp" class="btn btn-primary btn-block btn-lg" style="background:#0891B2;">Calcular ITP orientativo</button>
+        </form>
+
+        <div id="resultado-itp" style="display:none;" class="mt-3">
+          <div style="background:var(--color-bg);border:2px solid #0891B2;border-radius:var(--radius-lg);padding:2rem;text-align:center;">
+            <p style="font-size:.9rem;color:var(--color-text-light);margin-bottom:.5rem;">Cuota orientativa del ITP:</p>
+            <p id="cuota-itp" style="font-size:2.5rem;font-weight:800;color:var(--color-primary);margin-bottom:.5rem;"></p>
+            <p id="detalle-itp" style="font-size:.85rem;color:var(--color-text-light);margin-bottom:1rem;"></p>
+            <div id="info-itp" class="info-box" style="text-align:left;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="local-content">
+      <div class="container" style="max-width:800px;">
+        <h2>¿Qué es el ITP del alquiler?</h2>
+        <p>El <strong>Impuesto de Transmisiones Patrimoniales (ITP)</strong> grava, entre otras operaciones, los arrendamientos de inmuebles. Cuando se firma un contrato de alquiler, el <strong>inquilino</strong> está obligado a liquidar el ITP mediante el <strong>Modelo 600</strong> ante la Hacienda autonómica correspondiente.</p>
+
+        <div class="info-box">
+          <strong>¿Quién paga el ITP del alquiler?</strong>
+          El sujeto pasivo es el arrendatario (inquilino), no el propietario. Es una obligación tributaria del inquilino, aunque es habitual que el propietario le informe de esta obligación al firmar el contrato.
+        </div>
+
+        <h2>¿Cómo se calcula el ITP de un alquiler?</h2>
+        <h3>Base imponible</h3>
+        <p>La base imponible es la <strong>renta total del contrato</strong>: la renta mensual multiplicada por el número de meses de duración pactada. Para contratos de 5 años a 800€/mes, la base sería 48.000€.</p>
+
+        <h3>Tipo impositivo</h3>
+        <p>El tipo general es del <strong>0,5%</strong> sobre la base imponible, aunque varía por CCAA. Algunas comunidades, como <strong>Madrid</strong>, aplican una <strong>bonificación del 100%</strong> (exención total) para arrendamientos de vivienda.</p>
+
+        <h2>Exenciones y bonificaciones por CCAA</h2>
+        <div class="checklist">
+          <ul>
+            <li><strong>Comunidad de Madrid:</strong> Bonificación del 100% — exención total para alquileres de vivienda</li>
+            <li><strong>Andalucía:</strong> Tipo reducido del 0,3% para vivienda habitual</li>
+            <li><strong>Resto de CCAA:</strong> Tipo general del 0,5% con posibles bonificaciones específicas</li>
+          </ul>
+        </div>
+
+        <h2>Plazo y forma de presentación</h2>
+        <p>El Modelo 600 debe presentarse dentro de los <strong>30 días hábiles</strong> siguientes a la firma del contrato. Se puede presentar de forma telemática a través de la sede electrónica de la Hacienda autonómica o presencialmente.</p>
+        <p>El impago o la presentación fuera de plazo genera <strong>recargos</strong> (entre el 1% y el 20% según el retraso) e <strong>intereses de demora</strong>.</p>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2>Preguntas frecuentes sobre el Modelo 600</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">¿Es obligatorio pagar el ITP de un contrato de alquiler?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">Sí, el arrendamiento está sujeto al ITP. El obligado al pago es el inquilino. Muchas CCAA aplican exenciones o bonificaciones para vivienda habitual.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Cuál es el plazo para presentar el Modelo 600?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">El plazo general es de 30 días hábiles desde la firma del contrato de arrendamiento.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Quién paga el ITP del alquiler?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">El sujeto pasivo es el arrendatario (inquilino), no el propietario. Aunque muchos inquilinos desconocen esta obligación.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿En Madrid hay que pagar ITP por el alquiler?</button>
+            <div class="faq-answer"><div class="faq-answer-inner">No. La Comunidad de Madrid aplica una bonificación del 100% en el ITP de arrendamientos de vivienda, por lo que la cuota es 0€. Aun así, técnicamente debe presentarse el modelo (exento).</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h2>¿Ya has depositado la fianza de tu alquiler?</h2>
+        <p>Consulta el organismo y los plazos de tu comunidad autónoma para depositar la fianza obligatoria.</p>
+        <a href="../fianzas/" class="btn btn-accent btn-lg">Consultar fianzas por CCAA</a>
+        <a href="../contratos/" class="btn btn-outline btn-lg" style="border-color:#fff;color:#fff;">Generar contrato LAU — 19€</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>RegistroAlquiler.com</h4>
+        <p>Herramientas para propietarios que alquilan con seguridad.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Herramientas gratuitas</h4>
+        <a href="../fianzas/">Fianzas por CCAA</a>
+        <a href="../calculadora-renta/">Calculadora de renta</a>
+        <a href="../modelo-600/">Modelo 600 ITP</a>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <a href="../validar-inquilino/">Scoring Inquilino — 15€</a>
+        <a href="../contratos/">Contratos LAU — 19€</a>
+        <a href="../acta-entrega/">Acta de entrega — 9€</a>
+        <a href="../reclamaciones/">Burofax impago — 39€</a>
+        <a href="../seguro-impago/">Seguro de impago</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="../legal/aviso-legal.html">Aviso legal</a>
+        <a href="../legal/privacidad.html">Política de privacidad</a>
+        <a href="../legal/cookies.html">Política de cookies</a>
+        <a href="../legal/condiciones.html">Condiciones de uso</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 RegistroAlquiler.com — Todos los derechos reservados. No somos un organismo oficial.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+  document.getElementById('btn-calcular-itp').addEventListener('click', function() {
+    const renta = parseFloat(document.getElementById('renta-itp').value);
+    const duracion = parseInt(document.getElementById('duracion-itp').value);
+    const sel = document.getElementById('ccaa-itp');
+    const opt = sel.options[sel.selectedIndex];
+    if (!renta || !opt.dataset.tipo) return;
+
+    const tipo = parseFloat(opt.dataset.tipo);
+    const exencion = opt.dataset.exencion;
+    const base = renta * 12 * duracion;
+    const cuota = base * tipo / 100;
+
+    document.getElementById('cuota-itp').textContent = cuota.toFixed(2) + ' €';
+    document.getElementById('detalle-itp').textContent =
+      `Base imponible: ${base.toFixed(0)}€ (${renta}€ × ${duracion * 12} meses) — Tipo: ${tipo}%`;
+
+    let infoHTML = '';
+    if (exencion === 'total') {
+      infoHTML = '<strong>✅ Exención total en esta CCAA</strong><p style="margin-top:.5rem;font-size:.85rem;">La Comunidad de Madrid aplica una bonificación del 100% en el ITP de arrendamientos de vivienda. La cuota es 0€, aunque técnicamente debe presentarse el modelo.</p>';
+    } else if (exencion === 'vivienda') {
+      infoHTML = '<strong>Tipo reducido para vivienda habitual</strong><p style="margin-top:.5rem;font-size:.85rem;">Esta CCAA aplica un tipo reducido del ' + tipo + '% para arrendamientos de vivienda habitual. Consulta si tu caso aplica.</p>';
+    } else {
+      infoHTML = '<strong>Tipo general del ' + tipo + '%</strong><p style="margin-top:.5rem;font-size:.85rem;">Se aplica el tipo general. Consulta la sede electrónica de tu CCAA para posibles bonificaciones específicas. Plazo: 30 días hábiles desde la firma.</p>';
+    }
+    document.getElementById('info-itp').innerHTML = infoHTML;
+    document.getElementById('resultado-itp').style.display = 'block';
+    document.getElementById('resultado-itp').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+  </script>
+</body>
+</html>

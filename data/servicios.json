@@ -1,0 +1,405 @@
+{
+  "servicios": [
+    {
+      "id": "scoring",
+      "slug": "validar-inquilino",
+      "nombre": "Scoring de Inquilino",
+      "descripcionCorta": "Verificación de solvencia económica del candidato a inquilino",
+      "descripcionLarga": "Analiza la capacidad de pago de tu futuro inquilino antes de firmar el contrato. Revisamos nóminas, historial de pagos y ratio de endeudamiento para darte un informe de solvencia claro y fiable.",
+      "precio": 15,
+      "moneda": "EUR",
+      "icono": "shield-check",
+      "color": "#2563EB",
+      "cta": "Validar inquilino ahora",
+      "ctaWhatsApp": "Hola, quiero verificar la solvencia de un candidato a inquilino.",
+      "whatsappNumero": "34600000000",
+      "stripeLink": "#",
+      "caracteristicas": [
+        "Análisis de nóminas y contratos laborales",
+        "Verificación del ratio de endeudamiento",
+        "Consulta de ficheros de morosidad (ASNEF/RAI)",
+        "Informe de solvencia en PDF en 24h",
+        "Recomendación clara: Apto / No apto / Con reservas"
+      ],
+      "garantias": [
+        "Cumplimiento RGPD y LOPDGDD",
+        "Datos tratados por profesionales colegiados",
+        "Informe firmado digitalmente"
+      ],
+      "testimonios": [
+        {
+          "nombre": "María G.",
+          "ciudad": "Madrid",
+          "texto": "Evité alquilar a un inquilino con deudas pendientes. Los 15€ mejor invertidos antes de firmar.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carlos R.",
+          "ciudad": "Barcelona",
+          "texto": "Rápido y profesional. En menos de un día tenía el informe completo de solvencia.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Ana P.",
+          "ciudad": "Valencia",
+          "texto": "Me dio la tranquilidad que necesitaba para alquilar mi piso con confianza.",
+          "estrellas": 4
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué datos necesito del candidato?",
+          "respuesta": "Necesitarás las 3 últimas nóminas, DNI/NIE y contrato laboral vigente del candidato."
+        },
+        {
+          "pregunta": "¿Cuánto tarda el informe?",
+          "respuesta": "El informe se entrega en un máximo de 24 horas laborables tras recibir la documentación."
+        },
+        {
+          "pregunta": "¿Es legal verificar la solvencia?",
+          "respuesta": "Sí, siempre con el consentimiento del candidato. Cumplimos con la RGPD y la LOPDGDD."
+        }
+      ],
+      "orden": 1,
+      "activo": true
+    },
+    {
+      "id": "contratos",
+      "slug": "contratos",
+      "nombre": "Contrato de Alquiler LAU",
+      "descripcionCorta": "Contrato de arrendamiento blindado y actualizado a la Ley de Vivienda 2023",
+      "descripcionLarga": "Genera un contrato de alquiler profesional adaptado a la nueva Ley de Vivienda 12/2023. Incluye cláusulas de protección para el propietario, actualización de renta según INE, inventario y todas las cláusulas que exige la LAU vigente.",
+      "precio": 19,
+      "moneda": "EUR",
+      "icono": "file-text",
+      "color": "#059669",
+      "cta": "Generar mi contrato",
+      "ctaWhatsApp": "Hola, necesito generar un contrato de alquiler adaptado a la nueva ley.",
+      "whatsappNumero": "34600000000",
+      "stripeLink": "#",
+      "caracteristicas": [
+        "Adaptado a la Ley de Vivienda 12/2023 y LAU vigente",
+        "Cláusulas de protección ante impago y daños",
+        "Actualización de renta según índice INE/IRAV",
+        "Inventario fotográfico incluido",
+        "Cláusula de zona tensionada (si aplica)",
+        "Entrega en PDF listo para firmar"
+      ],
+      "garantias": [
+        "Redactado por profesionales jurídicos",
+        "Actualización legal garantizada",
+        "Válido en todo el territorio español"
+      ],
+      "testimonios": [
+        {
+          "nombre": "Javier M.",
+          "ciudad": "Sevilla",
+          "texto": "Mucho más completo que los contratos genéricos de internet. Las cláusulas de protección son clave.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Laura S.",
+          "ciudad": "Bilbao",
+          "texto": "Me aseguré de que mi contrato cumplía con la nueva ley. Fácil y rápido.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Pedro L.",
+          "ciudad": "Málaga",
+          "texto": "Por 19€ tienes un contrato que un abogado te cobraría 200€. Totalmente recomendable.",
+          "estrellas": 5
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿El contrato está adaptado a la nueva Ley de Vivienda?",
+          "respuesta": "Sí, nuestros contratos incluyen todas las cláusulas obligatorias de la Ley 12/2023, incluyendo zona tensionada si aplica."
+        },
+        {
+          "pregunta": "¿Puedo personalizar las cláusulas?",
+          "respuesta": "Sí, el asistente te permite añadir cláusulas adicionales como prohibición de mascotas, subarriendo, obras, etc."
+        },
+        {
+          "pregunta": "¿Es válido legalmente?",
+          "respuesta": "Sí, cumple con todos los requisitos de la LAU (Ley 29/1994) y la Ley de Vivienda 12/2023."
+        }
+      ],
+      "orden": 2,
+      "activo": true
+    },
+    {
+      "id": "burofax",
+      "slug": "reclamaciones",
+      "nombre": "Burofax por Impago",
+      "descripcionCorta": "Requerimiento fehaciente de pago con validez legal para reclamaciones de alquiler",
+      "descripcionLarga": "Genera y envía un requerimiento de pago con validez legal a tu inquilino moroso. Incluye redacción profesional del burofax, envío certificado con acuse de recibo y contenido certificado, válido como paso previo obligatorio al procedimiento de desahucio.",
+      "precio": 39,
+      "moneda": "EUR",
+      "icono": "mail-warning",
+      "color": "#DC2626",
+      "cta": "Enviar burofax ahora",
+      "ctaWhatsApp": "Hola, necesito enviar un burofax de reclamación de impago a mi inquilino.",
+      "whatsappNumero": "34600000000",
+      "stripeLink": "#",
+      "caracteristicas": [
+        "Redacción profesional del requerimiento de pago",
+        "Envío certificado con acuse de recibo",
+        "Certificación de contenido por operador postal",
+        "Válido como requisito previo al desahucio (art. 22.4 LEC)",
+        "Incluye cálculo de deuda y plazo legal",
+        "Seguimiento del estado de entrega"
+      ],
+      "garantias": [
+        "Validez legal plena ante tribunales",
+        "Certificación de contenido y entrega",
+        "Redacción supervisada por profesionales"
+      ],
+      "testimonios": [
+        {
+          "nombre": "Roberto F.",
+          "ciudad": "Zaragoza",
+          "texto": "Mi inquilino pagó todo lo que debía una semana después de recibir el burofax. Funciona.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Carmen D.",
+          "ciudad": "Alicante",
+          "texto": "Necesitaba el burofax como paso previo al desahucio. Todo correcto y rápido.",
+          "estrellas": 4
+        },
+        {
+          "nombre": "Miguel A.",
+          "ciudad": "Valladolid",
+          "texto": "Profesional y a una fracción del coste de un abogado. El inquilino reaccionó al instante.",
+          "estrellas": 5
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿El burofax tiene validez legal?",
+          "respuesta": "Sí, el burofax certificado con acuse de recibo y contenido certificado tiene plena validez legal como comunicación fehaciente."
+        },
+        {
+          "pregunta": "¿Es obligatorio enviar burofax antes de un desahucio?",
+          "respuesta": "La LEC exige un requerimiento previo de pago para iniciar el procedimiento de desahucio por impago (art. 22.4)."
+        },
+        {
+          "pregunta": "¿Cuánto tarda en llegar al destinatario?",
+          "respuesta": "El burofax se envía en 24h laborables. La entrega suele realizarse en 1-3 días hábiles según la zona."
+        }
+      ],
+      "orden": 3,
+      "activo": true
+    },
+    {
+      "id": "calculadora-renta",
+      "slug": "calculadora-renta",
+      "nombre": "Calculadora de Actualización de Renta",
+      "descripcionCorta": "Calcula la renta actualizada de tu alquiler según el índice IRAV/IPC vigente",
+      "descripcionLarga": "Introduce la fecha de tu contrato, la renta actual y obtén al instante la renta actualizada legalmente según el índice de referencia vigente (IRAV o IPC). Herramienta gratuita para propietarios e inquilinos.",
+      "precio": 0,
+      "moneda": "EUR",
+      "icono": "calculator",
+      "color": "#7C3AED",
+      "cta": "Calcular mi renta",
+      "gratuito": true,
+      "caracteristicas": [
+        "Cálculo automático según IRAV (índice vigente desde 2024)",
+        "Resultado instantáneo con la renta actualizada",
+        "Referencia legal al artículo de la LAU aplicable",
+        "Histórico de índices IPC e IRAV",
+        "Válido para contratos anteriores y posteriores a 2024"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué índice se usa para actualizar la renta en 2024?",
+          "respuesta": "Desde 2024, se usa el Índice de Referencia de Arrendamiento de Vivienda (IRAV), publicado por el INE, que sustituye al IPC para actualizaciones de renta."
+        },
+        {
+          "pregunta": "¿Cuándo puedo actualizar la renta?",
+          "respuesta": "La renta solo puede actualizarse en la fecha de aniversario del contrato, nunca antes. Debe notificarse al inquilino con al menos 1 mes de antelación."
+        },
+        {
+          "pregunta": "¿Se puede subir la renta más que el IRAV?",
+          "respuesta": "No. La Ley de Vivienda 12/2023 establece que la renta solo puede actualizarse según el índice IRAV. No se permite aplicar subidas superiores."
+        }
+      ],
+      "orden": 4,
+      "activo": true
+    },
+    {
+      "id": "modelo-600",
+      "slug": "modelo-600",
+      "nombre": "Modelo 600 ITP por Comunidad Autónoma",
+      "descripcionCorta": "Guía para liquidar el Impuesto de Transmisiones Patrimoniales (ITP) de tu contrato de alquiler",
+      "descripcionLarga": "Consulta cómo presentar y liquidar el Modelo 600 del ITP en tu comunidad autónoma. Cada CCAA tiene sus propios plazos, tipos impositivos y formas de presentación. Herramienta gratuita con información verificada.",
+      "precio": 0,
+      "moneda": "EUR",
+      "icono": "file-tax",
+      "color": "#0891B2",
+      "cta": "Consultar mi CCAA",
+      "gratuito": true,
+      "caracteristicas": [
+        "Tipos impositivos del ITP por comunidad autónoma",
+        "Plazos de presentación y modelos específicos",
+        "Enlace directo a la sede electrónica de cada CCAA",
+        "Exenciones y bonificaciones aplicables",
+        "Cálculo orientativo de la cuota a pagar"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Es obligatorio pagar el ITP de un alquiler?",
+          "respuesta": "Sí. El arrendamiento está sujeto al Impuesto de Transmisiones Patrimoniales (ITP). El obligado al pago es el inquilino, aunque muchos lo desconocen."
+        },
+        {
+          "pregunta": "¿Cuánto se paga de ITP por un alquiler?",
+          "respuesta": "Depende de la CCAA y de la duración del contrato. Se calcula sobre la base de la renta total del contrato. Muchas CCAA aplican tarifas reducidas o exenciones para vivienda habitual."
+        },
+        {
+          "pregunta": "¿Qué plazo hay para presentar el Modelo 600?",
+          "respuesta": "El plazo general es de 30 días hábiles desde la firma del contrato. El incumplimiento genera recargos e intereses de demora."
+        }
+      ],
+      "orden": 5,
+      "activo": true
+    },
+    {
+      "id": "seguro-impago",
+      "slug": "seguro-impago",
+      "nombre": "Seguro de Impago de Alquiler",
+      "descripcionCorta": "Compara y contrata el seguro de impago que mejor protege tu alquiler",
+      "descripcionLarga": "Compara las mejores aseguradoras de impago de alquiler en España. Protege tu renta ante impagos, actos vandálicos y gastos de defensa jurídica. Te ayudamos a encontrar la póliza que mejor se adapta a tu situación.",
+      "precio": 0,
+      "moneda": "EUR",
+      "icono": "shield-plus",
+      "color": "#0D9488",
+      "cta": "Comparar seguros",
+      "ctaWhatsApp": "Hola, quiero información sobre seguros de impago de alquiler.",
+      "whatsappNumero": "34600000000",
+      "modeloNegocio": "afiliacion",
+      "caracteristicas": [
+        "Comparativa de las principales aseguradoras",
+        "Cobertura de rentas impagadas (12-18 meses)",
+        "Defensa jurídica y reclamación de daños incluida",
+        "Actos vandálicos cubiertos",
+        "Estudio de solvencia del inquilino incluido en la póliza",
+        "Asesoramiento personalizado sin compromiso"
+      ],
+      "garantias": [
+        "Aseguradoras autorizadas por la DGSFP",
+        "Sin permanencia en la mayoría de pólizas",
+        "Asesoramiento imparcial y gratuito"
+      ],
+      "testimonios": [
+        {
+          "nombre": "Fernando T.",
+          "ciudad": "Madrid",
+          "texto": "Mi inquilino dejó de pagar a los 4 meses. El seguro cubrió todo y se encargaron del desahucio. Imprescindible.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Isabel M.",
+          "ciudad": "Barcelona",
+          "texto": "Por 300€ al año tengo la tranquilidad total. La aseguradora respondió rápido y sin problemas.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Antonio J.",
+          "ciudad": "Sevilla",
+          "texto": "El comparador me ahorró más de 150€ respecto a la primera póliza que me ofrecieron.",
+          "estrellas": 4
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Cuánto cuesta un seguro de impago?",
+          "respuesta": "Entre el 3% y el 5% de la renta anual. Para un alquiler de 800€/mes, el seguro oscila entre 290€ y 480€ al año."
+        },
+        {
+          "pregunta": "¿Qué cubre un seguro de impago?",
+          "respuesta": "Generalmente cubre las rentas impagadas (12-18 meses), defensa jurídica, reclamación de daños y actos vandálicos. Las coberturas varían según la aseguradora."
+        },
+        {
+          "pregunta": "¿El seguro incluye estudio de solvencia?",
+          "respuesta": "Sí, la mayoría de aseguradoras incluyen un estudio de solvencia del inquilino como paso previo a la contratación. Si el inquilino no pasa el estudio, no se emite la póliza."
+        }
+      ],
+      "orden": 6,
+      "activo": true
+    },
+    {
+      "id": "acta-entrega",
+      "slug": "acta-entrega",
+      "nombre": "Acta de Entrega y Devolución de Llaves",
+      "descripcionCorta": "Documento legal para la entrega o devolución del inmueble con inventario detallado",
+      "descripcionLarga": "Genera un acta profesional de entrega o devolución de llaves con inventario detallado, estado de contadores, lecturas de suministros y espacio para observaciones. Documento esencial para proteger la fianza y evitar disputas.",
+      "precio": 9,
+      "moneda": "EUR",
+      "icono": "key",
+      "color": "#CA8A04",
+      "cta": "Generar acta de entrega",
+      "ctaWhatsApp": "Hola, necesito generar un acta de entrega de llaves para mi alquiler.",
+      "whatsappNumero": "34600000000",
+      "stripeLink": "#",
+      "caracteristicas": [
+        "Acta de entrega o devolución de llaves",
+        "Inventario detallado habitación por habitación",
+        "Registro del estado de suministros y contadores",
+        "Espacio para fotografías de referencia",
+        "Firma de ambas partes con validez legal",
+        "PDF profesional listo para imprimir"
+      ],
+      "garantias": [
+        "Documento con validez legal",
+        "Protege ante reclamaciones de fianza",
+        "Complemento perfecto del contrato LAU"
+      ],
+      "testimonios": [
+        {
+          "nombre": "Lucía R.",
+          "ciudad": "Valencia",
+          "texto": "Cuando el inquilino se fue, el acta demostró que los daños no estaban al entrar. Recuperé toda la fianza.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Manuel G.",
+          "ciudad": "Madrid",
+          "texto": "Simple, rápido y muy completo. Mucho mejor que el papel en blanco que usaba antes.",
+          "estrellas": 5
+        },
+        {
+          "nombre": "Rosa P.",
+          "ciudad": "Bilbao",
+          "texto": "Por 9€ te evitas problemas de miles de euros. No alquilo sin hacer el acta.",
+          "estrellas": 5
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Es obligatorio firmar un acta de entrega?",
+          "respuesta": "No es legalmente obligatorio, pero es la mejor protección del propietario para justificar deducciones de la fianza por daños o desperfectos."
+        },
+        {
+          "pregunta": "¿Necesito una al entregar y otra al devolver?",
+          "respuesta": "Sí, lo ideal es hacer un acta en la entrega (con el estado inicial) y otra en la devolución (con el estado final). La comparación de ambas acredita los daños."
+        },
+        {
+          "pregunta": "¿Tiene validez legal?",
+          "respuesta": "Sí, firmada por ambas partes tiene plena validez como prueba documental ante un tribunal o en una reclamación de fianza."
+        }
+      ],
+      "orden": 7,
+      "activo": true
+    }
+  ],
+  "configuracionGlobal": {
+    "whatsappNumero": "34600000000",
+    "emailContacto": "contacto@tramitesalquiler.com",
+    "nombreEmpresa": "RegistroAlquiler.com",
+    "sloganPrincipal": "Todo lo que necesita un propietario para alquilar con seguridad",
+    "metaDescripcion": "Herramientas para propietarios: depósito de fianzas por CCAA, scoring de inquilinos, contratos LAU y burofax por impago. Rápido, legal y asequible.",
+    "colorPrimario": "#1E3A5F",
+    "colorSecundario": "#2563EB",
+    "colorAccento": "#F59E0B"
+  }
+}
