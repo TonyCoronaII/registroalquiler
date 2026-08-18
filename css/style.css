@@ -962,6 +962,25 @@ ul, ol { list-style: none; }
 
 .form-group textarea { resize: vertical; min-height: 100px; }
 
+.form-message {
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  margin-top: 1rem;
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.form-message-success {
+  background: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+.form-message-error {
+  background: #FEF2F2;
+  color: #991B1B;
+  border: 1px solid #FECACA;
+}
+
 /* ── BREADCRUMB ── */
 .breadcrumb {
   padding: .75rem 1rem;

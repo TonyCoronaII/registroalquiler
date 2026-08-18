@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://registroalquiler.com/sitemap.xml
+Sitemap: https://tramitesalquiler.com/sitemap.xml
