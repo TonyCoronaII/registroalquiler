@@ -109,6 +109,13 @@ document.addEventListener('DOMContentLoaded', () => {
     return results;
   }
 
+  function normalizarClave(str) {
+    var map = {'á':'a','é':'e','í':'i','ó':'o','ú':'u','ñ':'n','Á':'A','É':'E','Í':'I','Ó':'O','Ú':'U','Ñ':'N','ü':'u','Ü':'U'};
+    var result = '';
+    for (var i = 0; i < str.length; i++) result += map[str[i]] || str[i];
+    return result.replace(/^[^a-zA-Z0-9]+/, '').replace(/[^a-zA-Z0-9]+$/, '');
+  }
+
   // --- Form submission ---
   Object.keys(forms).forEach(formId => {
     const form = document.getElementById(formId);
@@ -130,7 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
       form.querySelectorAll('input:not([type="file"]), select, textarea').forEach(field => {
         if (field.id && field.value) {
           const label = form.querySelector('label[for="' + field.id + '"]');
-          const key = label ? label.textContent.replace(/\s*\(.*\)/, '').trim() : field.id;
+          const raw = label ? label.textContent.replace(/\s*\(.*\)/, '').trim() : field.id;
+          const key = normalizarClave(raw);
           datos[key] = field.value;
         }
       });
