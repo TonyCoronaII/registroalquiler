@@ -247,12 +247,10 @@
               <label for="detalles-burofax">Detalles adicionales (opcional)</label>
               <textarea id="detalles-burofax" placeholder="Explica brevemente la situación del impago..."></textarea>
             </div>
-            <div class="form-group" style="margin-top:1rem;">
-              <label style="display:flex;align-items:flex-start;gap:.5rem;font-size:.85rem;cursor:pointer;">
-                <input type="checkbox" required style="margin-top:3px;">
-                <span>He leído y acepto la <a href="/legal/privacidad.html" target="_blank" style="color:var(--color-primary);">política de privacidad</a></span>
-              </label>
-            </div>
+            <label for="privacidad-burofax" style="display:flex;align-items:center;gap:8px;margin:1rem 0 .5rem;font-size:.84rem;color:#475569;cursor:pointer;">
+              <input type="checkbox" id="privacidad-burofax" required style="width:18px;height:18px;flex-shrink:0;accent-color:#2563eb;">
+              He leído y acepto la <a href="/legal/privacidad.html" target="_blank" style="color:#2563eb;font-weight:700;text-decoration:underline;">política de privacidad</a>
+            </label>
             <button type="submit" class="btn btn-danger btn-block btn-lg">Enviar burofax — 39€</button>
             <p class="text-center mt-2" style="font-size:.8rem;color:var(--color-text-light);">O contacta directamente:</p>
             <a href="#" class="btn btn-whatsapp btn-block mt-1" data-action="whatsapp" data-servicio="burofax">Escribir por WhatsApp</a>
