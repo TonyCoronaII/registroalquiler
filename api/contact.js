@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Método no permitido' });
   }
 
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxdmfy-vqpUJyMe8L2wTVAuVL9gnBAyTTcAG_ghl9sKOJ7SFtaMSPlNN2WJ1pE2ttom/exec';
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxgLj9pnYcoPHu6yZgqXorjak0xseIMVRopY18i-LRnTwSKTyMyKjmHqoRqoUqgbnBO/exec';
 
   try {
     const response = await fetch(APPS_SCRIPT_URL, {
